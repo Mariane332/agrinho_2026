@@ -112,22 +112,5 @@ img:hover {
 
 
 
-/* Fade-in */
-.fade-in {
-    opacity: 1;
-    transform: translateY(0);
-    transition: all 1s ease-out;
-}
 
-.corpo1, .corpo2, header, footer {
-    opacity: 0;
-    transform: translateY(50px);
-}
-
-/* Flutuação suave das imagens */
-@keyframes float {
-    0%   { transform: translateY(0); }
-    50%  { transform: translateY(-8px); }
-    100% { transform: translateY(0); }
-}
 
