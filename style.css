@@ -1,115 +1,161 @@
-/* Configurações Gerais */
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
+/* Corpo da página */
 body {
-    background-color: #f4f7f2; /* Cinza esverdeado bem clarinho */
-    color: #333;
+    background-color: #fff8f0; /* fundo clarinho e acolhedor */
+    color: #4e4e4e;
     line-height: 1.6;
 }
 
-/* Cabeçalho */
+/* Header */
 header {
-    background-color: #2d5a27; /* Verde floresta */
+    background-color: #ffb6b9; /* rosa fofo */
     color: white;
-    padding: 2rem;
     text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 2rem 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Seções Principais */
+/* Seções */
 section {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    padding: 3rem 1rem;
+    max-width: 1000px;
+    margin: 2rem auto;
 }
 
-/* Títulos */
-h1 {
-    color: #1b3d18;
-    margin-bottom: 20px;
+/* Corpo 1 */
+.corpo1 {
+    background-color: #fff1f3; /* rosinha delicado */
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.chamada-texto h1 {
     font-size: 1.8rem;
-    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #ff6f91; /* rosa vibrante mas fofo */
+    line-height: 1.3;
 }
 
-h2 {
-    color: #4c7c32;
-    margin: 25px 0 15px 0;
-    border-left: 5px solid #4c7c32;
-    padding-left: 15px;
+.chamada-texto h2 {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #ff477e;
 }
 
-/* Textos e Listas */
-p {
-    margin-bottom: 15px;
+.chamada-texto p {
+    margin-bottom: 1rem;
     text-align: justify;
 }
 
-ol {
-    margin-left: 25px;
-    margin-bottom: 20px;
-}
-
-ol li {
-    margin-bottom: 10px;
-    font-weight: 500;
-}
-
-/* Imagens */
-img {
+/* Imagens fofinhas */
+.chamada-texto img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 20px auto;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+    margin: 1rem 0;
+    border-radius: 20px;
+    border: 3px solid #ffd6e0; /* contorno fofo */
+    box-shadow: 0 4px 8px rgba(255,182,185,0.3);
+    transition: transform 0.3s;
 }
 
-img:hover {
-    transform: scale(1.02); /* Efeito de zoom leve */
+.chamada-texto img:hover {
+    transform: scale(1.05); /* efeito de leve zoom fofo */
 }
 
-/* Rodapé */
-.rodapé {
-    background-color: #1b3d18;
+/* Corpo 2 */
+.corpo2 {
+    background-color: #fffaf0; /* fundo creme clarinho */
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.corpo2 h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #ff6f91;
+}
+
+.corpo2 h2 {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ff477e;
+}
+
+.corpo2 ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.corpo2 li {
+    margin-bottom: 0.7rem;
+}
+
+/* Footer fofo */
+footer.rodapé {
+    background-color: #ffb6b9;
     color: white;
     text-align: center;
-    padding: 40px 20px;
-    margin-top: 50px;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
-.rodapé h1 {
-    color: white;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+footer.rodapé h1 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
 }
 
-/* Logos das redes sociais */
-.logo {
+footer.rodapé .logo {
     width: 40px;
-    display: inline-block;
-    margin: 0 10px;
-    filter: brightness(0) invert(1); /* Deixa os ícones brancos */
+    height: 40px;
+    margin: 0 0.5rem;
+    vertical-align: middle;
+    border-radius: 50%;
+    transition: transform 0.3s;
 }
 
-/* Responsividade para celular */
-@media (max-width: 600px) {
-    header { font-size: 1.8rem; }
-    section { margin: 10px; }
-    h1 { font-size: 1.5rem; }
+footer.rodapé .logo:hover {
+    transform: scale(1.2);
 }
 
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .chamada-texto h1, .corpo2 h1 {
+        font-size: 1.5rem;
+    }
+
+    .chamada-texto h2, .corpo2 h2 {
+        font-size: 1.2rem;
+    }
+
+    section {
+        padding: 2rem 1rem;
+    }
+}
 
 
 
