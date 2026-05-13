@@ -66,3 +66,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+// animações flutuantes para imagens
+document.addEventListener('DOMContentLoaded', () => {
+    const imagens = document.querySelectorAll('img');
+
+    imagens.forEach(img => {
+        let direction = 1; // 1 = para baixo, -1 = para cima
+        let offset = 0;
+
+        function floatAnimation() {
+            offset += 0.2 * direction; // velocidade do movimento
+            if(offset > 5 || offset < -5) direction *= -1; // inverter direção
+
+            img.style.transform = `translateY(${offset}px) scale(1.03)`;
+            img.style.transition = 'transform 0.1s linear';
+
+            requestAnimationFrame(floatAnimation);
+        }
+
+        floatAnimation();
+    });
+});
