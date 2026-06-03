@@ -1,4 +1,4 @@
-```javascript
+
 // ===== ANIMAÇÃO DAS FOLHAS =====
 
 let folhas = [];
@@ -80,4 +80,3 @@ function corrigirQuiz() {
     document.getElementById("resultado").innerHTML =
         "<h2>Você acertou " + pontos + " de 5 perguntas!</h2><p>" + mensagem + "</p>";
 }
-```
