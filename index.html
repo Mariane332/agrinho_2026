@@ -48,17 +48,51 @@ Focada em recuperar a saúde do solo e sequestrar carbono, esta abordagem melhor
                 <script src="sketch.js"></script>
             </section>
 
-    </section>
-    <section class="quiz">
-    <h1>🌱 Quiz da Sustentabilidade no Agro</h1>
+    <section>
 
-    <div id="pergunta"></div>
+<h2>Quiz Agrinho 🌱</h2>
 
-    <button onclick="responder(0)" id="op0"></button>
-    <button onclick="responder(1)" id="op1"></button>
-    <button onclick="responder(2)" id="op2"></button>
+<p><strong>1. Qual prática ajuda a preservar o solo?</strong></p>
+<button onclick="responder('certo')">Plantio Direto</button>
+<button onclick="responder('errado')">Desmatamento</button>
 
-    <p id="resultado"></p>
+<br><br>
+
+<p><strong>2. O que a rotação de culturas proporciona?</strong></p>
+<button onclick="responder('certo')">Melhora da fertilidade do solo</button>
+<button onclick="responder('errado')">Mais erosão</button>
+
+<br><br>
+
+<p><strong>3. O que significa ILPF?</strong></p>
+<button onclick="responder('certo')">Integração Lavoura-Pecuária-Floresta</button>
+<button onclick="responder('errado')">Instituto de Lavouras Produtivas</button>
+
+<br><br>
+
+<p><strong>4. Qual atitude contribui para a sustentabilidade?</strong></p>
+<button onclick="responder('certo')">Uso consciente da água</button>
+<button onclick="responder('errado')">Desperdício de recursos</button>
+
+<br><br>
+
+<p><strong>5. Qual é um benefício do plantio de árvores nas propriedades rurais?</strong></p>
+<button onclick="responder('certo')">Captura de carbono</button>
+<button onclick="responder('errado')">Aumento da erosão</button>
+
+<br><br>
+
+<p><strong>6. O objetivo da agricultura sustentável é:</strong></p>
+<button onclick="responder('certo')">Produzir preservando o meio ambiente</button>
+<button onclick="responder('errado')">Produzir sem considerar impactos ambientais</button>
+
+<br><br>
+
+<button onclick="mostrarResultado()">Ver Resultado Final</button>
+
+<p id="resultado"></p>
+<p id="pontuacao"></p>
+
 </section>
 
 
