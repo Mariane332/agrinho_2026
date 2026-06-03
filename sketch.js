@@ -41,3 +41,20 @@ function draw() {
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
+function corrigirQuiz(){
+
+    let pontos = 0;
+
+    for(let i = 1; i <= 5; i++){
+
+        let resposta =
+        document.querySelector('input[name="q'+i+'"]:checked');
+
+        if(resposta && resposta.value === "certo"){
+            pontos++;
+        }
+    }
+
+    document.getElementById("resultado").innerHTML =
+    "🌾 Você acertou " + pontos + " de 5 perguntas!";
+}
