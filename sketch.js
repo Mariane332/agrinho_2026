@@ -37,6 +37,17 @@ function draw() {
     }
   }
 }
+function responder(resposta){
+
+    let resultado = document.getElementById("resultado");
+
+    if(resposta == "certo"){
+        resultado.innerHTML = "✅ Resposta correta!";
+    }else{
+        resultado.innerHTML = "❌ Resposta incorreta!";
+    }
+
+}
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
