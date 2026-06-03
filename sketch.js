@@ -36,26 +36,8 @@ function draw() {
       folha.x = random(width);
     }
   }
-  {function windowResized() {
+}
+
+function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
-{let pontos = 0;
-
-function responder(resposta){
-
-    let resultado = document.getElementById("resultado");
-
-    if(resposta == "certo"){
-        pontos++;
-        resultado.innerHTML = "✅ Resposta correta!";
-    }else{
-        resultado.innerHTML = "❌ Resposta incorreta!";
-    }
-}
-
-function mostrarResultado(){
-    document.getElementById("pontuacao").innerHTML =
-    "🌱 Você acertou " + pontos + " perguntas!";
-}
-
-
